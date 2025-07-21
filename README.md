@@ -1,14 +1,18 @@
-# Grocery Store Dataset
+# Grocery Store Dataset Augmented
+
+## Preface
+
+_This repo is cloned from [https://github.com/marcusklasson/GroceryStoreDataset](this repository). I am not the original creator, this repo is forked and changes are made to the dataset._
 
 This repository contains the dataset of natural images of grocery items. All natural images was taken with a smartphone camera in different grocery stores. We ended up with 5125 natural images from 81 different classes of fruits, vegetables, and carton items (e.g. juice, milk, yoghurt). The 81 classes are divided into 42 coarse-grained classes, where e.g. the fine-grained classes 'Royal Gala' and 'Granny Smith' belong to the same coarse-grained class 'Apple'. For each fine-grained class, we have downloaded an iconic image and a product description of the item, where some samples of these can be seen on this page below. The dataset was presented in the paper ["A Hierarchical Grocery Store Image Dataset with Visual and Semantic Labels"](https://arxiv.org/pdf/1901.00711.pdf), which appeared at WACV 2019.
 
 ## How to use the dataset
 
-The files **train.txt**, **val.txt** and **test.txt** in the folder **dataset** includes the paths to the images in the training, validation and test set respectively. Each row in these two files consists of the path to an image and its fine-grained label followed by its coarse-grained label, where both labels are represented as integers. 
+The files **train.txt**, **val.txt** and **test.txt** in the folder **dataset** includes the paths to the images in the training, validation and test set respectively. Each row in these two files consists of the path to an image and its fine-grained label followed by its coarse-grained label, where both labels are represented as integers.
 
-The 81 fine-grained classes and their coarse-grained classes can be found in **classes.csv** in the folder **dataset**. The classes corresponding label (an integer) is also included in addition to the paths to their iconic image and the product description. 
+The 81 fine-grained classes and their coarse-grained classes can be found in **classes.csv** in the folder **dataset**. The classes corresponding label (an integer) is also included in addition to the paths to their iconic image and the product description.
 
-Feel free to download the dataset and apply it to your model. 
+Feel free to download the dataset and apply it to your model.
 
 ## Samples of natural images
 
@@ -28,7 +32,6 @@ Feel free to download the dataset and apply it to your model.
 </p>
 
 ## Samples of iconic images
-
 
 <p align="center">
   <img src="/sample_images/iconic/Granny-Smith_Iconic.jpg" width="150" title="hover text">
@@ -54,9 +57,11 @@ Feel free to download the dataset and apply it to your model.
 **Bravo Apple Juice:** Ready to drink apple juice from concentrate. Fresh and sour taste. Fits the breakfast table, as quencher and meal drink.
 
 ## Updates
-* 2019-11-07: Added validation set with 292 natural images from 59 classes.
+
+- 2019-11-07: Added validation set with 292 natural images from 59 classes.
 
 ## Citation
+
 If you use this dataset for your research, please cite our [paper](https://arxiv.org/abs/1901.00711):
 
 ```
@@ -69,10 +74,12 @@ If you use this dataset for your research, please cite our [paper](https://arxiv
 ```
 
 ## Code
-There exists code in Tensorflow v.1 from our follow-up paper 
-[Using Variational Multi-view Learning for Classification of Grocery Items](https://www.sciencedirect.com/science/article/pii/S2666389920301914): 
 
-* [Code in Tensorflow v.1](https://github.com/marcusklasson/vcca_grocerystore)
+There exists code in Tensorflow v.1 from our follow-up paper
+[Using Variational Multi-view Learning for Classification of Grocery Items](https://www.sciencedirect.com/science/article/pii/S2666389920301914):
+
+- [Code in Tensorflow v.1](https://github.com/marcusklasson/vcca_grocerystore)
 
 ## Acknowledgement
+
 This research was funded by [Stiftelsen Promobilia](https://www.promobilia.se/) in Stockholm, Sweden.
